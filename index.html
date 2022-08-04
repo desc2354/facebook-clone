@@ -6,37 +6,24 @@
         <meta name="theme-color" content="#000000" />
         <title>Simple Boilerplate</title>
         <link rel="stylesheet" type="text/css" href="src/css/index.css">
-        <!-- Add additional CSS & JS files as necessary here -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
-
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <!-- ================================ -->
-        <!-- Add more JavaScript files here!! -->
-        <!-- ================================ -->
-        <script type="text/javascript" src="src/js/other.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
+        <div class="menuBar">
+            <div class="row">
+                <div class="col-3">
+                    <img src="./src/assets/logo-trimmy.png" class="logo">
+                </div>
+                <div class="col-6">
+                    <input type="text" placeholder="Search Facebook" id="search" class="tbox px-3 py-2"/>
+                </div>
+                <div class="col-3">
+                    <div class="iconButton">
+                        <span class="iconify" data-icon="dashicons:bell" data-width="30"></span>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </body>
 </html>
