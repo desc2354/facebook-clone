@@ -17,12 +17,15 @@ body {
   padding: 15px;
 }
 
-#search {
+#search-wrapper {
   width: 500px;
   background-color: var(--main-color);
   outline: none;
   border: none;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .iconButton {
@@ -30,4 +33,32 @@ body {
   display: inline-block;
   padding: 7px;
   border-radius: 100%;
+  cursor:pointer;
+  margin-left: 5px;
+}
+
+.iconButton:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.tbox {
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  padding-left: 10px;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menuBar-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
